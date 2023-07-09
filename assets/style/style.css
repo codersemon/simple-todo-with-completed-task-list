@@ -113,3 +113,14 @@ footer a{
     color: #fa8231;
     text-decoration: none;
 }
+
+@media all and (max-width: 576px){
+    .pending-tasks, .completed-tasks {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .add-form input {
+        width: 88%;
+    }
+
+}
