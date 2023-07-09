@@ -71,10 +71,11 @@
     list-style: none;
     padding: 0 10px;
 }
-.tasks ul li{
+.tasks ul li {
     border-bottom: 1px solid #ccc;
     justify-content: space-between;
     padding: 5px 0;
+    line-break: anywhere;
 }
 
 .tasks ul li .fa-hourglass-end, .completed-tasks .fa-check{
