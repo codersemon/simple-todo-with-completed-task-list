@@ -7,7 +7,9 @@ const pendingTaskWrap = document.querySelector(".pending-tasks ul");
 // completed task output selection
 const completedTaskWrap = document.querySelector(".completed-tasks ul");
 
+// on load getting pending tasks data from LS if have
 let pendingTasks = getDataFromLS("pending_task");
+// on load getting completed tasks data from LS if have
 let completedTasks = getDataFromLS("completed_task");
 
 // add task on button click
@@ -60,7 +62,7 @@ function showPendingTasks() {
   });
   pendingTaskWrap.innerHTML = pendingTaskHTML;
 
-  //   if pending task is empty
+  // if pending task is empty
   if (pendingTasks.length == 0) {
     pendingTaskWrap.innerHTML = `<h5>No pending task available!</h5>`;
   }
@@ -73,6 +75,8 @@ showPendingTasks();
 function deletePendingTasks(deleteItem) {
   const updatedTasks = pendingTasks.filter((item) => item != deleteItem);
   pendingTasks = updatedTasks;
+
+  // update pending task on LS
   sendDataToLS("pending_task", pendingTasks);
   showPendingTasks();
 }
