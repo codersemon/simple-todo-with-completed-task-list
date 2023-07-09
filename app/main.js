@@ -41,6 +41,11 @@ function addNewTask() {
     showPendingTasks();
   }
 
+  //   css style validation
+  !task.value.trim()
+    ? (task.style.borderColor = "red")
+    : (task.style.borderColor = "#ccc");
+
   // clear input
   task.value = "";
 }
