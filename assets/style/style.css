@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common CSS  */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-title{
+    margin: 10px 0;
+}
+
+/* form css  */
+.add-form{
+    max-width: 400px;
+    margin: auto;
+}
+.add-form input{
+    width: 90%;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+}
+.add-form input:focus{
+    outline: none;
+}
+.add-form button{
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    background-color: #14a44d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+}
+
+/* tasks output css  */
+.tasks{
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: start;
+    margin-bottom: 45px;
+}
+.pending-tasks, .completed-tasks{
+    width: 48%;
+    border: 1px solid #ccc;
+}
+.pending-tasks .title, .completed-tasks .title{
+    text-align: center;
+    color: #fff;
+}
+.pending-tasks .title{
+    background-color: #a5b1c2;
+}
+.completed-tasks .title{
+    background-color: #14a44d;
+}
+.tasks ul{
+    list-style: none;
+    padding: 0 10px;
+}
+.tasks ul li{
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.tasks ul li .fa-hourglass-end, .completed-tasks .fa-check{
+    color: #2ecc71;
+}
+.tasks ul li:last-child{
+    border: none;
+}
+.btn{
+    padding: 0 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.complete-btn{
+    background-color: #14a44d;
+}
+.delete-btn{
+    background-color: #da4e66;
+}
+.completed-tasks li p:first-child{
+    opacity: .5;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #4b6584;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+}
+footer a{
+    color: #fa8231;
+    text-decoration: none;
+}

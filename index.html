@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo App With HTML, CSS & Javascript</title>
+    <!-- font Awesome  -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+    <!-- Style CSS  -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center section-title">Simple Todo</h2>
+
+        <div class="add-form d-flex">
+            <input type="text" placeholder="type task name">
+            <button><i class="fa-light fa-paper-plane"></i></button>
+        </div>
+
+        <div class="tasks d-flex">
+            <div class="pending-tasks">
+                <h4 class="title">Pending Task</h4>
+                <ul>
+                </ul>
+            </div>
+            <div class="completed-tasks">
+                <h4 class="title">Completed Tasks</h4>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Developed by <a href="https://emonkhan.me" target="_blank">Emon Khan</a>
+    </footer>
+    <!-- scripts  -->
+    <script src="./app/functions.js"></script>
+    <script src="./app/main.js"></script>
+</body>
+</html>
